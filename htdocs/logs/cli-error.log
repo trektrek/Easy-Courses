@@ -1,0 +1,226 @@
+2021-03-30 23:56:25 Error: [PDOException] SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Driver.php on line 93
+Stack Trace:
+#0 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Driver.php(93): PDO->__construct('mysql:host=loca...', 'my_app', 'secret', Array)
+#1 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(105): Cake\Database\Driver->_connect('mysql:host=loca...', Array)
+#2 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Schema/BaseSchema.php(44): Cake\Database\Driver\Mysql->connect()
+#3 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Dialect/MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(51): Cake\Database\Driver\Mysql->schemaDialect()
+#5 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(41): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Connection.php(399): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1096): Cake\Database\Connection->getSchemaCollection()
+#8 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1050): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'cursos', 'Cursos')
+#12 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Cursos')
+#13 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/BakeShell.php(282): Bake\Shell\Task\ModelTask->main('Cursos')
+#14 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('Cursos', 0)
+#15 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/BakeShell.php(283): Cake\Collection\Collection->each(Object(Closure))
+#16 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Console/Shell.php(517): Bake\Shell\BakeShell->all('cursos')
+#17 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#18 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#19 /Users/macbook/VDocker/Easy/htdocs/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#20 {main}
+
+
+2021-03-31 00:39:50 Error: [PDOException] SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Driver.php on line 93
+Stack Trace:
+#0 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Driver.php(93): PDO->__construct('mysql:host=mysq...', 'default', 'secret', Array)
+#1 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(105): Cake\Database\Driver->_connect('mysql:host=mysq...', Array)
+#2 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Schema/BaseSchema.php(44): Cake\Database\Driver\Mysql->connect()
+#3 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Dialect/MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(51): Cake\Database\Driver\Mysql->schemaDialect()
+#5 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(41): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Connection.php(399): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1096): Cake\Database\Connection->getSchemaCollection()
+#8 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1050): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'cursos', 'Cursos')
+#12 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Cursos')
+#13 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/BakeShell.php(282): Bake\Shell\Task\ModelTask->main('Cursos')
+#14 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('Cursos', 0)
+#15 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/BakeShell.php(283): Cake\Collection\Collection->each(Object(Closure))
+#16 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Console/Shell.php(517): Bake\Shell\BakeShell->all('cursos')
+#17 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#18 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#19 /Users/macbook/VDocker/Easy/htdocs/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#20 {main}
+
+
+Caused by: [PDOException] PDO::__construct(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Driver.php on line 93
+Stack Trace:
+#0 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Driver.php(93): PDO->__construct('mysql:host=mysq...', 'default', 'secret', Array)
+#1 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(105): Cake\Database\Driver->_connect('mysql:host=mysq...', Array)
+#2 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Schema/BaseSchema.php(44): Cake\Database\Driver\Mysql->connect()
+#3 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Dialect/MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(51): Cake\Database\Driver\Mysql->schemaDialect()
+#5 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(41): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Connection.php(399): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1096): Cake\Database\Connection->getSchemaCollection()
+#8 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1050): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'cursos', 'Cursos')
+#12 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Cursos')
+#13 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/BakeShell.php(282): Bake\Shell\Task\ModelTask->main('Cursos')
+#14 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('Cursos', 0)
+#15 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/BakeShell.php(283): Cake\Collection\Collection->each(Object(Closure))
+#16 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Console/Shell.php(517): Bake\Shell\BakeShell->all('cursos')
+#17 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#18 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#19 /Users/macbook/VDocker/Easy/htdocs/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#20 {main}
+
+
+2021-03-31 00:40:22 Error: [PDOException] SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Driver.php on line 93
+Stack Trace:
+#0 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Driver.php(93): PDO->__construct('mysql:host=mysq...', 'default', 'secret', Array)
+#1 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(105): Cake\Database\Driver->_connect('mysql:host=mysq...', Array)
+#2 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Schema/BaseSchema.php(44): Cake\Database\Driver\Mysql->connect()
+#3 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Dialect/MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(51): Cake\Database\Driver\Mysql->schemaDialect()
+#5 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(41): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Connection.php(399): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1096): Cake\Database\Connection->getSchemaCollection()
+#8 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1050): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'cursos', 'Cursos')
+#12 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Cursos')
+#13 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/BakeShell.php(282): Bake\Shell\Task\ModelTask->main('Cursos')
+#14 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('Cursos', 0)
+#15 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/BakeShell.php(283): Cake\Collection\Collection->each(Object(Closure))
+#16 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Console/Shell.php(517): Bake\Shell\BakeShell->all('cursos')
+#17 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#18 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#19 /Users/macbook/VDocker/Easy/htdocs/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#20 {main}
+
+
+Caused by: [PDOException] PDO::__construct(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Driver.php on line 93
+Stack Trace:
+#0 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Driver.php(93): PDO->__construct('mysql:host=mysq...', 'default', 'secret', Array)
+#1 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(105): Cake\Database\Driver->_connect('mysql:host=mysq...', Array)
+#2 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Schema/BaseSchema.php(44): Cake\Database\Driver\Mysql->connect()
+#3 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Dialect/MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(51): Cake\Database\Driver\Mysql->schemaDialect()
+#5 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(41): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Connection.php(399): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1096): Cake\Database\Connection->getSchemaCollection()
+#8 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1050): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'cursos', 'Cursos')
+#12 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Cursos')
+#13 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/BakeShell.php(282): Bake\Shell\Task\ModelTask->main('Cursos')
+#14 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('Cursos', 0)
+#15 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/BakeShell.php(283): Cake\Collection\Collection->each(Object(Closure))
+#16 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Console/Shell.php(517): Bake\Shell\BakeShell->all('cursos')
+#17 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#18 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#19 /Users/macbook/VDocker/Easy/htdocs/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#20 {main}
+
+
+2021-03-31 00:41:11 Error: [PDOException] SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Driver.php on line 93
+Stack Trace:
+#0 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Driver.php(93): PDO->__construct('mysql:host=mysq...', 'default', 'secret', Array)
+#1 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(105): Cake\Database\Driver->_connect('mysql:host=mysq...', Array)
+#2 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Schema/BaseSchema.php(44): Cake\Database\Driver\Mysql->connect()
+#3 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Dialect/MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(51): Cake\Database\Driver\Mysql->schemaDialect()
+#5 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(41): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Connection.php(399): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1096): Cake\Database\Connection->getSchemaCollection()
+#8 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1050): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'cursos', 'Cursos')
+#12 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Cursos')
+#13 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/BakeShell.php(282): Bake\Shell\Task\ModelTask->main('Cursos')
+#14 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('Cursos', 0)
+#15 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/BakeShell.php(283): Cake\Collection\Collection->each(Object(Closure))
+#16 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Console/Shell.php(517): Bake\Shell\BakeShell->all('cursos')
+#17 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#18 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#19 /Users/macbook/VDocker/Easy/htdocs/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#20 {main}
+
+
+Caused by: [PDOException] PDO::__construct(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Driver.php on line 93
+Stack Trace:
+#0 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Driver.php(93): PDO->__construct('mysql:host=mysq...', 'default', 'secret', Array)
+#1 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(105): Cake\Database\Driver->_connect('mysql:host=mysq...', Array)
+#2 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Schema/BaseSchema.php(44): Cake\Database\Driver\Mysql->connect()
+#3 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Dialect/MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(51): Cake\Database\Driver\Mysql->schemaDialect()
+#5 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(41): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Database/Connection.php(399): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1096): Cake\Database\Connection->getSchemaCollection()
+#8 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1050): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'cursos', 'Cursos')
+#12 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Cursos')
+#13 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/BakeShell.php(282): Bake\Shell\Task\ModelTask->main('Cursos')
+#14 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('Cursos', 0)
+#15 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/bake/src/Shell/BakeShell.php(283): Cake\Collection\Collection->each(Object(Closure))
+#16 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Console/Shell.php(517): Bake\Shell\BakeShell->all('cursos')
+#17 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#18 /Users/macbook/VDocker/Easy/htdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#19 /Users/macbook/VDocker/Easy/htdocs/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#20 {main}
+
+
+2021-03-31 00:49:12 Error: [RuntimeException] Unknown command `cake levels`. Run `cake --help` to get the list of valid commands. in /var/www/html/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 346
+Stack Trace:
+#0 /var/www/html/vendor/cakephp/cakephp/src/Console/CommandRunner.php(157): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'levels')
+#1 /var/www/html/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2021-03-31 20:11:37 Warning: Warning (2): mkdir(): File exists in [/var/www/html/vendor/cakephp/cakephp/src/Filesystem/Folder.php, line 661]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+mkdir - [internal], line ??
+Cake\Filesystem\Folder::create() - CORE/src/Filesystem/Folder.php, line 661
+Cake\Filesystem\Folder::copy() - CORE/src/Filesystem/Folder.php, line 820
+Cake\Shell\Task\AssetsTask::_copyDirectory() - CORE/src/Shell/Task/AssetsTask.php, line 302
+Cake\Shell\Task\AssetsTask::_process() - CORE/src/Shell/Task/AssetsTask.php, line 183
+Cake\Shell\Task\AssetsTask::symlink() - CORE/src/Shell/Task/AssetsTask.php, line 38
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 517
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 524
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 384
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 162
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2021-03-31 20:12:32 Warning: Warning (2): mkdir(): File exists in [/var/www/html/vendor/cakephp/cakephp/src/Filesystem/Folder.php, line 661]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+mkdir - [internal], line ??
+Cake\Filesystem\Folder::create() - CORE/src/Filesystem/Folder.php, line 661
+Cake\Filesystem\Folder::copy() - CORE/src/Filesystem/Folder.php, line 820
+Cake\Shell\Task\AssetsTask::_copyDirectory() - CORE/src/Shell/Task/AssetsTask.php, line 302
+Cake\Shell\Task\AssetsTask::_process() - CORE/src/Shell/Task/AssetsTask.php, line 183
+Cake\Shell\Task\AssetsTask::symlink() - CORE/src/Shell/Task/AssetsTask.php, line 38
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 517
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 524
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 384
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 162
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2021-03-31 20:17:41 Error: [Error] Class 'Plugin' not found in /var/www/html/config/bootstrap.php on line 205
+Stack Trace:
+#0 /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php(173): require_once()
+#1 /var/www/html/src/Application.php(41): Cake\Http\BaseApplication->bootstrap()
+#2 /var/www/html/vendor/cakephp/cakephp/src/Console/CommandRunner.php(189): App\Application->bootstrap()
+#3 /var/www/html/vendor/cakephp/cakephp/src/Console/CommandRunner.php(132): Cake\Console\CommandRunner->bootstrap()
+#4 /var/www/html/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#5 {main}
+
+

@@ -1,0 +1,78 @@
+#navegacao1, 
+#navegacao2, 
+#navegacao3,
+#navegacao4{
+	margin-bottom:0!important;
+	padding:0 10px!important;
+}
+#navegacao1 li,
+#navegacao2 li,
+#navegacao3 li,
+#navegacao4 li{
+	float: left;
+	list-style: none;
+	width: 80px;
+	height: 50px;
+	font-size: 24px;
+	text-align: center;
+	border: 1px solid #ccc;
+	padding: 5px;
+	margin-bottom:0;
+}
+#navegacao1{
+	padding-left:30px;
+}
+#navegacao2 li,
+#navegacao3 li,
+#navegacao4 li{
+	width: 80px;
+	height:50px;
+	font-size: 12px;
+}
+#navegacao2 i, 
+#navegacao3 i,
+#navegacao4 i{
+	font-size: 18px;
+}
+input, select, text-area, label{
+	margin-bottom: 5px!important;
+	height: 30px!important;
+	padding-bottom: 5px!important;
+	font-size: 13px!important;
+	font-weight:800;
+}
+
+#header,#header2{
+	padding:0 10px;
+	border: 1px solid #ccc;
+}
+#filtros{
+	padding: 10px 10px 0 10px;
+	border: 1px solid #ccc;
+	height: 50px;
+}
+#filtros input[type="checkbox"]{
+	position: relative;
+	top:10px;
+}
+#details {
+	border: 1px solid #ccc;
+	padding: 10px;
+	height: 205px;
+	font-weight: 800;
+}
+#curso_details{
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+	height: 200px;
+}
+table, tr, td, th{
+	padding: 5px!important;
+	font-size: 13px;
+	height:18px;
+	margin-bottom: 0!important;
+}
+#footer{
+	padding: 10px;
+	border: 1px solid #ccc;
+}
